@@ -1,0 +1,10 @@
+sudo apt-get update
+sudo apt install python3-pip
+sudo pip install apache-airflow
+sudo pip install apache-airflow-providers-amazon
+pip install --upgrade awscli
+sudo apt install default-jdk
+sudo pip install pyspark
+airflow standalone
+aws emr create-default-roles
+aws iam list-roles | grep 'EMR_DefaultRole\|EMR_EC2_DefaultRole'
